@@ -15,9 +15,9 @@ import { exercises, ENERGINIVA, KATEGORI} from './exercise.js';
         middels: 1,
         hoy: 2
     };
-   console.log("riktigKategori:", riktigKategori);
-   console.log("valgtEnerginiva:", valgtEnerginiva);
-   console.log("alle øvelser:", exercises);
+   console.log("riktigKategori:", riktigKategori);   // Log the correct category based on the selected time
+   console.log("valgtEnerginiva:", valgtEnerginiva); // Log the selected energy level
+   console.log("alle øvelser:", exercises); // Log all exercises to see their categories and energy levels
 
     const aktuelleOvelser = exercises.filter(
         (ovelse) =>
@@ -25,8 +25,28 @@ import { exercises, ENERGINIVA, KATEGORI} from './exercise.js';
             energiRangering[ovelse.energiniva] <= energiRangering[valgtEnerginiva]
     );
 
+
     const stokkeOvelser = stokkListe(aktuelleOvelser);
-    return stokkeOvelser;
+
+    const valgteOvelser = [];
+    let bruktTid = 0;
+
+    for ( const ovelse of stokkeOvelser) {
+        if (bruktTid + ovelse.tid <= valgtTid) {
+            valgteOvelser.push(ovelse);
+            bruktTid += ovelse.tid;
+        }
+    }
+
+
+
+    
+    return valgteOvelser;
+
+
+
+
+    
 }
  
   function stokkListe(liste) {
@@ -38,4 +58,6 @@ import { exercises, ENERGINIVA, KATEGORI} from './exercise.js';
     return kopi;
   }
 
- console.log(velgOkt(60, ENERGINIVA.HOY));
+
+
+ console.log(velgOkt(60, ENERGINIVA.HOY)); // Test the function with a 60-minute session and high energy level
