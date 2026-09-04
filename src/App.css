@@ -66,3 +66,11 @@ button:hover {
   color: white;
   font-weight: bold;
 }
+
+li {
+   background-color: #F0EDE5;
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  font-size: 18px;
+}

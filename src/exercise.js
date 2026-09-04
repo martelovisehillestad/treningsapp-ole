@@ -17,7 +17,8 @@ export const KATEGORI = {
             navn : "Benkpress",
             kategori : KATEGORI.STYRKE,
             energiniva : ENERGINIVA.MIDDELS,
-            tid : 12 , 
+            tid : 12 ,
+            detaljer : " 3 sett x 8 reps" 
         },
         {
             id : "utfall",
@@ -25,6 +26,7 @@ export const KATEGORI = {
             kategori : KATEGORI.STYRKE,
             energiniva : ENERGINIVA.HOY,
             tid : 20 ,
+            detaljer : " 3 sett x 10 reps på hvert ben"
         },
 
         {
@@ -33,6 +35,7 @@ export const KATEGORI = {
             kategori : KATEGORI.STYRKE,
             energiniva : ENERGINIVA.LAV,
             tid : 10 ,
+            detaljer : " 3 sett x 12 reps"
         },
 
         {
@@ -41,6 +44,7 @@ export const KATEGORI = {
             kategori : KATEGORI.STYRKE,
             energiniva : ENERGINIVA.LAV,
             tid : 7 ,
+            detaljer : " 4 sett x 10 reps"
         },
 
         {
@@ -49,6 +53,7 @@ export const KATEGORI = {
             kategori : KATEGORI.STYRKE,
             energiniva : ENERGINIVA.MIDDELS,
             tid : 15 ,
+            detaljer : " 3 sett x 8 reps"
         },
 
         {
@@ -57,6 +62,7 @@ export const KATEGORI = {
             kategori : KATEGORI.STYRKE,
             energiniva : ENERGINIVA.MIDDELS,
             tid : 20 ,
+            detaljer : " 3 sett x 10 reps"
         },
 
         {
@@ -65,6 +71,7 @@ export const KATEGORI = {
             kategori : KATEGORI.STYRKE,
             energiniva : ENERGINIVA.LAV,
             tid : 7 ,
+            detaljer : " 3 sett x 15 reps"
         },
 
         {
@@ -73,6 +80,7 @@ export const KATEGORI = {
             kategori : KATEGORI.KONDISJON,
             energiniva : ENERGINIVA.LAV,
             tid : 60 ,
+            detaljer : " Gå tur med King"
         },
 
         {
@@ -81,6 +89,8 @@ export const KATEGORI = {
             kategori : KATEGORI.KONDISJON,
             energiniva : ENERGINIVA.MIDDELS,
             tid : 60 ,
+            detaljer : " Sykle på landevei, minst 20 km"
+            
         },
     
         {
@@ -89,6 +99,7 @@ export const KATEGORI = {
             kategori : KATEGORI.RESTITUSJON,
             energiniva : ENERGINIVA.LAV,    
             tid : 60 ,
+            detaljer : " Sykle med King"
         },
 
         {
@@ -97,6 +108,7 @@ export const KATEGORI = {
             kategori : KATEGORI.KONDISJON,
             energiniva : ENERGINIVA.MIDDELS,
             tid : 90 ,
+            detaljer : " Gå på ski i marka, minst 10 km"
         }
     ];
 
