@@ -83,7 +83,7 @@ function App() {
         key={ovelse.id}
          onClick={() => setApenOvelse(apenOvelse === ovelse.id ? null : ovelse.id)}>
          <span>{ovelse.navn}</span>
-          {apenOvelse === ovelse.id && <p>{ovelse.detaljer}</p>}
+          {apenOvelse === ovelse.id && <p className="ovelse-detaljer">{ovelse.detaljer}</p>}
           </li>
         
       ))}
