@@ -2,7 +2,7 @@ export const ENERGINIVA = {
 
     LAV: "lav",
     MIDDELS: "middels",
-    HOY: "høy",
+    HOY: "hoy",
 };
 
 export const KATEGORI = {

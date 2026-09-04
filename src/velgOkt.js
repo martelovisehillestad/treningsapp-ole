@@ -25,6 +25,17 @@ import { exercises, ENERGINIVA, KATEGORI} from './exercise.js';
             energiRangering[ovelse.energiniva] <= energiRangering[valgtEnerginiva]
     );
 
-    return aktuelleOvelser;
+    const stokkeOvelser = stokkListe(aktuelleOvelser);
+    return stokkeOvelser;
+}
+ 
+  function stokkListe(liste) {
+    const kopi = [...liste];
+    for (let i = kopi.length - 1; i > 0; i--){
+        const j = Math.floor(Math.random() * (i + 1));
+        [kopi[i], kopi[j]] = [kopi[j], kopi[i]];
+    }
+    return kopi;
+  }
 
-} console.log(velgOkt(60, ENERGINIVA.LAV));
+ console.log(velgOkt(60, ENERGINIVA.HOY));
