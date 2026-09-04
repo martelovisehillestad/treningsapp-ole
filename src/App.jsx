@@ -76,7 +76,7 @@ function App() {
       {steg === "resultat" && (
 
       <div>
-        <button className="knapp-resultat" onClick={finnOkt}>Dagens økt</button>
+        <button className="knapp-resultat" onClick={() => setSteg("genererer")}>Generer ny treningsøkt</button>
         <ul>
         {resultat.map((ovelse) => (
         <li
