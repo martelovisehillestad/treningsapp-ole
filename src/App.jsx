@@ -32,6 +32,11 @@ function App() {
       <button onClick={() => setValgtEnerginiva(ENERGINIVA.HOY)}>Høy</button>
       <button onClick={finnOkt}>Finn økt</button>
 
+      <ul>
+        {resultat.map((ovelse) => (
+          <li key={ovelse.id}>{ovelse.navn} - {ovelse.tid} min </li>
+        ))}
+      </ul>
 
 
     </div>
