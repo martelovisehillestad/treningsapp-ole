@@ -2,13 +2,13 @@ export const ENERGINIVA = {
 
     LAV: "lav",
     MIDDELS: "middels",
-    HØY: "høy",
+    HOY: "høy",
 };
 
 export const KATEGORI = {
-    STYRKE: "styrke",
-    KONDISJON: "kondisjon",
-    RESTITUSJON: "restitusjon",
+    STYRKE: "Styrke",
+    KONDISJON: "Kondisjon",
+    RESTITUSJON: "Restitusjon",
 };
 
     export const exercises = [
@@ -23,7 +23,7 @@ export const KATEGORI = {
             id : "utfall",
             navn : "Utfall",
             kategori : KATEGORI.STYRKE,
-            energiniva : ENERGINIVA.HØY,
+            energiniva : ENERGINIVA.HOY,
             tid : 20 ,
         },
 
